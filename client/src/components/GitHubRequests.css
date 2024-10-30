@@ -1,0 +1,46 @@
+.requests-list {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.request-item {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.request-item h3 {
+  margin: 0 0 16px 0;
+}
+
+.request-item a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.request-item a:hover {
+  text-decoration: underline;
+}
+
+.pr-details p {
+  margin: 8px 0;
+}
+
+.pr-description {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e1e4e8;
+}
+
+.status-open {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-closed {
+  color: #d73a49;
+  font-weight: bold;
+}

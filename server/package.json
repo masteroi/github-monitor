@@ -1,0 +1,27 @@
+{
+  "name": "github-monitor-server",
+  "version": "1.0.0",
+  "description": "BE Server for github monitor task",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "setup": "npm install && docker-compose up -d",
+    "stop": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "Roi Sadika",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
