@@ -8,7 +8,6 @@ This project consists of a full-stack application with separate frontend and bac
 
 - client/ -> Frontend React application
 - server/ -> Backend Node.js server
-- server/docker-compose.yml -> Docker configuration files
 - README.md -> Project documentation
 
 ## Backend (Server)
@@ -30,9 +29,6 @@ npm start
 ```
 npm run setup - Install dependencies and start MongoDB
 npm start - Start the server
-npm run dev - Start the server with nodemon (auto-reload on changes)
-npm run docker:up - Start MongoDB container
-npm run docker:down - Stop MongoDB container
 ```
 
 ## Frontend (Client)
@@ -51,16 +47,7 @@ npm run start
 
 ## Database
 
-MongoDB database running in Docker container.
-
-### Setup
-
-1. Ensure Docker is installed on your system
-2. Start the database (if not run already with the setup command):
-
-```bash
-docker-compose up -d
-```
+MongoDB database running remote on Atlas.
 
 ## Environment Variables
 

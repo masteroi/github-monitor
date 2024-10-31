@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './GitHubRequests.css';
-
+const API_BASE_URL = 'http://github-monitor-env.eba-xedjxi22.eu-central-1.elasticbeanstalk.com';
 
 const GitHubRequests = () => {
   const [requests, setRequests] = useState([]);
@@ -13,7 +13,7 @@ const GitHubRequests = () => {
 
   const fetchRequests = async () => {
     try {
-      const response = await fetch('/api/pull-requests');
+      const response = await fetch(`${API_BASE_URL}/api/pull-requests`);
       const data = await response.json();
       setRequests(data);
     } catch (error) {
